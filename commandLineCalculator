@@ -1,0 +1,63 @@
+def instruction():
+    print('''
+    [1]Addition
+    [2]Subtraction
+    [3]Multiplication
+    [4]Division  
+    [5]Exit
+    ''')
+
+
+def addition(_num1,_num2):
+    sum = int(_num1 + _num2)
+    return sum
+
+
+def subtraction(_num1,_num2):
+    difference = int(_num1 - _num2)
+    return difference
+
+
+def multiplication(_num1,_num2):
+    product = int(_num1 * _num2)
+    return product
+
+
+def division(_num1,_num2):
+    quotient = int(_num1 / _num2)
+    return quotient
+
+
+while True:
+    instruction()
+    user_input = input('Select an operation....')
+    if user_input == "1" :
+        num1 = int(input('Enter the first integer....'))
+        num2 = int(input('Enter the second integer....'))
+        print(addition(num1,num2))
+        continue
+
+    if user_input == "2":
+        num1 = int(input('Enter the first integer....'))
+        num2 = int(input('Enter the second integer....'))
+        print(subtraction(num1,num2))
+        continue
+
+    if user_input == "3":
+        num1 = int(input('Enter the first integer....'))
+        num2 = int(input('Enter the second integer....'))
+        print(multiplication(num1,num2))
+        continue
+    if user_input == "4":
+        num1 = int(input('Enter the first integer....'))
+        num2 = int(input('Enter the second integer....'))
+        print(division(num1,num2))
+        continue
+
+    if user_input == "5":
+        print('Program ends  now...Thank you')
+        break
+
+    else:
+        print('Invalid Input....Try again')
+        continue
